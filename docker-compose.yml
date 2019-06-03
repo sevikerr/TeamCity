@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    image: jetbrains/teamcity-server
+    volumes:
+      - ./data:/data/teamcity_server/datadir
+      - ./logs:/opt/teamcity/logs
+    ports:
+      - 8080:8111
